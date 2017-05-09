@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    /*background-image: url(hanselgretel_mattotti2.jpg);*/
+    background-color: #171717;
+    height: 100%;
+    width: 100%;
+}
+
+#titulo { /*mudar de h's para p's sempre que mudar o tamanho de letra*/
+    margin: 0 auto; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    font-family: "Oswald", serif;
+    font-size: 100px;
+}
+
+#dois {
+    text-shadow: 6px 6px black;    
+}
+
+#comeco { /*mudar de h's para p's sempre que mudar o tamanho de letra*/
+    transform: translate(-50%,-50%);
+    margin: 0 auto; 
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    color: white;
+    text-align: center;
+    font-family: "Oswald", serif;
+    font-size: 30px;
+}
+
+a { 
+    margin-top: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#social {
+    bottom: 32px;
+    right: 32px;
+    position: absolute;
+    display: block;
+    text-align: right;
+    font-family: "Oswald", serif;
+}
+
+.dif {
+    color: black;
+}
+
+#ajuda {
+    position: absolute;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-196px);
+    top: 40px;
+    left: 32px;
+}
+
+#instrucoes { 
+    margin-right: 8px;
+    text-align: center; 
+    width: 90px;
+    border-radius: 5px;
+    padding-bottom: 8px;
+    background-color: white;
+    display: inline-block;
+    font-family: "Oswald", serif;
+}
+
+#creditos { 
+    text-align: center;
+    width: 90px;
+    border-radius: 5px;
+    padding-bottom: 8px;
+    background-color: white;
+    display: inline-block;
+    font-family: "Oswald", serif;
+}
+
+#grupo {
+    top: 32px;
+    right: 32px;
+    position: absolute;
+    display: block;
+    text-align: right;
+    font-family: "Oswald", serif;
+}
+
+#voltar {
+    color: black;
+    padding: 8px 16px;
+    background: white;
+    bottom: 32px;
+    right: 32px;
+    position: fixed;
+    display: block;
+}
+
+#tit { /*mudar de h's para p's sempre que mudar o tamanho de letra*/
+    margin:0 auto;
+    color: white;
+    text-align: center;
+    font-family: "Oswald", serif;
+    font-size: 40px;
+    display:block;
+    margin-top: 128px;
+    text-decoration: underline;
+}
+
+#info {
+    position: absolute;
+    transform: translate(-50%, 0);
+    left: 50%;
+    margin-top: 10px;
+}
+
+#a { /*mudar de h's para p's sempre que mudar o tamanho de letra*/
+    color: white;
+    font-family: "Oswald", serif;
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#b { /*mudar de h's para p's sempre que mudar o tamanho de letra*/
+    color: white;
+    font-family: "Oswald", serif;
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#autor { /*mudar de h's para p's sempre que mudar o tamanho de letra*/
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#bio { /*mudar de h's para p's sempre que mudar o tamanho de letra*/
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 64px;
+}
+
+#fautor {
+    position: absolute;
+    left: 96px;
+    top: 256px;
+    width: 440px;
+    height: 556px;
+}
+
+#fautor:hover {
+    transform: scale(1.01);
+}
+
+/* esconder todo e qualquer scroll nas páginas*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*tudo composto em termos de css até aqui!! OBRIGADO JOANA! <3 */
+
+.image {
+    padding-top: 75px;
+    padding-bottom: 200px;
+}
+
+#andri {
+    position: absolute;
+    left: 10%;
+    top: 260px;
+}
+
+#andri:hover {
+    transform: scale(1.01);
+}
+
+#carol {
+    position: absolute;
+    left: 41%;
+    top: 260px;
+}
+
+#carol:hover {
+    transform: scale(1.01);
+}
+
+#ze {
+    position: absolute;
+    left: 72%;
+    top: 260px;
+}
+
+#ze:hover {
+    transform: scale(1.01);
+}
+
+#des3 {
+    position: absolute;
+    top: 575px;
+    left: 68%;
+    width: 27%;
+    color: white;
+    text-align: center;
+}
