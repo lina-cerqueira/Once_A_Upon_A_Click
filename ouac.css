@@ -91,6 +91,7 @@ a:hover {
     font-family: "Oswald", serif;
 }
 
+
 #grupo {
     top: 32px;
     right: 32px;
@@ -126,6 +127,7 @@ a:hover {
     transform: translate(-50%, 0);
     left: 50%;
     margin-top: 10px;
+     margin-left: 180px;
 }
 
 #a { /*mudar de h's para p's sempre que mudar o tamanho de letra*/
@@ -223,3 +225,14 @@ a:hover {
     color: white;
     text-align: center;
 }
+
+#introducao {
+    position: absolute;
+    left:20%;
+    top: 700px;
+    width: 60%;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
