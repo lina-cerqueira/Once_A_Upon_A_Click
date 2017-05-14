@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <link rel="stylesheet" type="text/css" href="ouac.css">
+    </head>
+    <body>
+        <nav>
+        </nav>
+        <main>
+            <div>
+               
+                  <center>
+            <img class="image" src="3.jpg" style="width:60%; height:60%;">  
+            <img class="image" src="4.jpg" style="width:60%; height:60%;"> 
+            <img class="image" src="5.jpg" style="width:60%; height:60%;">
+            <img class="image" src="6.jpg" style="width:60%; height:60%;">
+            <img class="image" src="7.jpg" style="width:60%; height:60%;">
+            <img class="image" src="8.jpg" style="width:60%; height:60%;">
+            <img class="image" src="9.jpg" style="width:60%; height:60%;">
+            <img class="image" src="10.jpg" style="width:60%; height:60%;">
+            <img class="image" src="11.jpg" style="width:60%; height:60%;">
+            <img class="image" src="12.jpg" style="width:60%; height:60%;">
+            <img class="image" src="13.jpg" style="width:60%; height:60%;">
+            <img class="image" src="14.jpg" style="width:60%; height:60%;">
+                </center>             
+            </div>
+           
+            
+           
+            <a href="index.html">voltar</a>
+            <a href="historia.html">voltar</a>
+        </main>
+    </body>
+    <footer>
+    </footer>
+</html>
