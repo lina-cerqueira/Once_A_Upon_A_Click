@@ -242,23 +242,26 @@ a:hover {
     text-align: center;
 }
 
-#introducao {
-    position: relative;
+.introducao {
+    position: ;
     left:20%;
     top: 100%;
     width: 60%;
     color: white;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.9vw;
+    font-family: 'Inknut Antiqua', normal;
 }
 
-.paragrafo1 {
+#paragrafo1 {
+  
     padding-top: 7%;
     top: 290%;
     width: 98%;
     color: white;
     text-align:;
-    font-size: 1.5vw;
+    font-size: 1vw;
+    font-family: 'Inknut Antiqua', normal;
 }
 
 .button {
@@ -266,15 +269,30 @@ a:hover {
     text-align: center;
 	background: transparent;
 	color: white;
-     padding: 15px 32px;
-     display: inline-block;
-	
+    padding: 15px 32px;
+    border: 4px double white;
+    display: inline-block;
+    font-family: 'Inknut Antiqua', serif;
+	margin: 20px;
 }
 
 .button:hover {
     text-align: center; 
- padding: 15px 32px;
+ padding: 15px 36px;
     border: 4px double white;
  display: inline-block;
 }
 
+.speech{
+    width: 100%;
+    height: 10em;
+    background-color: white;
+}
+
+.escondido{
+   display: none;
+}
+
+.timing1{animation-delay: 1s}
+.timing1{animation-delay: 2s}
+.timing1{animation-delay: 3s}
