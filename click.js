@@ -10,7 +10,7 @@
   //  });
 
 
-$(".speech").click(showText);
+$("#speechBubble").click(showText);
 
 function showText(){
     console.log("funciona");

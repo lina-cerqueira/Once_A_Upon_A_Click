@@ -184,7 +184,7 @@ a:hover {
 
 .image {
     padding-top: 75px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
     
 }
 
@@ -256,7 +256,7 @@ a:hover {
 #paragrafo1 {
   
     padding-top: 7%;
-    top: 290%;
+    top: 240%;
     width: 90%;
     color: white;
     text-align:;
@@ -284,13 +284,30 @@ a:hover {
 }
 
 .speech{
-    width: 100%;
+    width: 80%;
     height: 10em;
     background-color: white;
 }
 
+#speechBubble{
+    position:absolute;
+    
+
+}
+
 .escondido{
    display: none;
+}
+
+#dialogo {
+  
+    padding-top: 7%;
+    top: 240%;
+    width: 50%;
+    color: black;
+    text-align:;
+    font-size: 1vw;
+    font-family: 'Inknut Antiqua', normal;
 }
 
 .timing1{animation-delay: 1s}
