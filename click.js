@@ -83,6 +83,25 @@ $("#stayinforest").on('mouseout', function(){
     $(".botao").css("opacity", "1");
 });
 
+$("#returntoparents").on('mouseover', function(){
+    this.src = "returntoparentshover.png";
+    $(".botao").css("opacity", "1");
+});
+$("#returntoparents").on('mouseout', function(){
+    this.src = "returntoparents.png";
+    $(".botao").css("opacity", "1");
+});
+
+$("#stayinthehouse").on('mouseover', function(){
+    this.src = "stayinthehousehover.png";
+    $(".botao").css("opacity", "1");
+});
+$("#stayinthehouse").on('mouseout', function(){
+    this.src = "stayinthehouse.png";
+    $(".botao").css("opacity", "1");
+});
+
+
 
 var contador = 0;
 $("#fogo").on('click', function(){
