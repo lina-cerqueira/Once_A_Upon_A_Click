@@ -47,61 +47,77 @@ $("#run").on('mouseout', function(){
     $(".botao").css("opacity", "1");
 });
 
-$("#return").on('mouseover', function(){
-    this.src = "returnhomehover.png";
-    $(".botao").css("opacity", "1");
-});
-$("#return").on('mouseout', function(){
-    this.src = "returnhome.png";
-    $(".botao").css("opacity", "1");
-});
-
-$("#forest").on('mouseover', function(){
-    this.src = "runtotheforesthover.png";
-    $(".botao").css("opacity", "1");
-});
-$("#forest").on('mouseout', function(){
-    this.src = "runtotheforest.png";
-    $(".botao").css("opacity", "1");
-});
-
-$("#oldlady").on('mouseover', function(){
-    this.src = "gowiththeoldladyhover.png";
-    $(".botao").css("opacity", "1");
-});
-$("#oldlady").on('mouseout', function(){
-    this.src = "gowiththeoldlady.png";
-    $(".botao").css("opacity", "1");
-});
-
-$("#stayinforest").on('mouseover', function(){
+$("#flo").on('mouseover', function(){
     this.src = "stayintheforesthover.png";
-    $(".botao").css("opacity", "1");
+    $(".botao").css("opacity", "0.6");
 });
-$("#stayinforest").on('mouseout', function(){
+$("#flo").on('mouseout', function(){
     this.src = "stayintheforest.png";
     $(".botao").css("opacity", "1");
 });
 
-$("#returntoparents").on('mouseover', function(){
-    this.src = "returntoparentshover.png";
+$("#home").on('mouseover', function(){
+    this.src = "returnhomehover.png";
+    $(".botao").css("opacity", "0.6");
+});
+$("#home").on('mouseout', function(){
+    this.src = "returnhome.png";
     $(".botao").css("opacity", "1");
 });
-$("#returntoparents").on('mouseout', function(){
+
+$("#olde").on('mouseover', function(){
+    this.src = "gowiththeoldladyhover.png";
+    $(".botao").css("opacity", "0.6");
+});
+$("#olde").on('mouseout', function(){
+    this.src = "gowiththeoldlady.png";
+    $(".botao").css("opacity", "1");
+});
+
+$("#run2").on('mouseover', function(){
+    this.src = "runtotheforesthover.png";
+    $(".botao").css("opacity", "0.6");
+});
+$("#run2").on('mouseout', function(){
+    this.src = "runtotheforest.png";
+    $(".botao").css("opacity", "1");
+});
+
+$("#stay").on('mouseover', function(){
+    this.src = "staywiththewitchhover.png";
+    $(".botao").css("opacity", "0.6");
+});
+$("#stay").on('mouseout', function(){
+    this.src = "staywiththewitch.png";
+    $(".botao").css("opacity", "1");
+});
+
+$("#dads").on('mouseover', function(){
+    this.src = "returntoparentshover.png";
+    $(".botao").css("opacity", "0.6");
+});
+$("#dads").on('mouseout', function(){
     this.src = "returntoparents.png";
     $(".botao").css("opacity", "1");
 });
 
-$("#stayinthehouse").on('mouseover', function(){
-    this.src = "stayinthehousehover.png";
-    $(".botao").css("opacity", "1");
+$(".imagepick1").on('mouseover', function(){
+    this.src = "baga1c.png";
+    $(".botao").css("opacity", "0.6");
 });
-$("#stayinthehouse").on('mouseout', function(){
-    this.src = "stayinthehouse.png";
+$(".imagepick1").on('mouseout', function(){
+    this.src = "baga1.png";
     $(".botao").css("opacity", "1");
 });
 
-
+$(".imagepick2").on('mouseover', function(){
+    this.src = "baga2c.png";
+    $(".botao").css("opacity", "0.6");
+});
+$(".imagepick2").on('mouseout', function(){
+    this.src = "baga2.png";
+    $(".botao").css("opacity", "1");
+});
 
 var contador = 0;
 $("#fogo").on('click', function(){
@@ -114,12 +130,134 @@ if (contador===2){
 }
 if (contador===3){
         this.src = "fogo4.jpg";
-        $("#paragrafo13").css('display', 'block');
-        $("#uimage").css('display', 'initial');
-    $("#uimage3").css('display', 'initial');
-    $("#uimage4").css('display', 'initial');
-        $("#paragrafo14").css('display', 'block');
+        $("#afterfogo").css('display', 'block');
+    //extra, trocar quando tiver jogo implementado
+    $("#parte3").css('display', 'block');
 }
 });
 
+var contador2 = 0;
+$("#lobo").on('click', function(){
+    contador2++;
+if (contador2===1){
+        this.src = "fogo2.jpg";
+}
+if (contador2===2){
+        this.src = "fogo3.jpg";
+}
+if (contador2===3){
+        this.src = "fogo4.jpg";
+        $("#susto").css('display', 'block');
+}
+});
 
+$("#susto").on('click', function(){
+    $("#susto2").css('display', 'block');
+});
+
+$("#susto2").on('click', function(){
+    $("#susto3").css('display', 'block');
+});
+
+$("#wake").on('click', function(){
+    $("#parte2").css('display', 'block');
+});
+
+$("#run").on('click', function(){
+    $("#parte2_1").css('display', 'block');
+});
+
+$("#flo").on('click', function(){
+    $("#parte4").css('display', 'block');
+});
+
+$("#home").on('click', function(){
+    $("#parte4_1").css('display', 'block');
+});
+
+$(".imagepick1").on('click', function(){
+    $("#parte5").css('display', 'block');
+});
+
+$("#olde").on('click', function(){
+    $("#parte6").css('display', 'block');
+});
+
+$("#osso").on('mouseover', function(){
+    $("#dedoi").attr("src","dedo6.jpg");
+});
+$("#osso").on('mouseout', function(){
+    $("#dedoi").attr("src","dedo.jpg");
+});
+
+$("#dedo1").on('mouseover', function(){
+    $("#dedoi").attr("src","dedo5.jpg");
+});
+$("#dedo1").on('mouseout', function(){
+    $("#dedoi").attr("src","dedo.jpg");
+});
+
+$("#dedo2").on('mouseover', function(){
+    $("#dedoi").attr("src","dedo4.jpg");
+});
+$("#dedo2").on('mouseout', function(){
+    $("#dedoi").attr("src","dedo.jpg");
+});
+
+$("#dedo3").on('mouseover', function(){
+    $("#dedoi").attr("src","dedo3.jpg");
+});
+$("#dedo3").on('mouseout', function(){
+    $("#dedoi").attr("src","dedo.jpg");
+});
+
+$("#dedo4").on('mouseover', function(){
+    $("#dedoi").attr("src","dedo2.jpg");
+});
+$("#dedo4").on('mouseout', function(){
+    $("#dedoi").attr("src","dedo.jpg");
+});
+
+$("#dedo5").on('mouseover', function(){
+    $("#dedoi").attr("src","dedo1.jpg");
+});
+$("#dedo5").on('mouseout', function(){
+    $("#dedoi").attr("src","dedo.jpg");
+});
+
+$("#osso").on('click', function(){
+    $("#parte7").css('display', 'block');
+});
+
+$("#fruta1").on('mouseover', function(){
+    $("#food").attr("src","comidafruta.jpg");
+});
+$("#fruta1").on('mouseout', function(){
+    $("#food").attr("src","comida.jpg");
+});
+
+$("#pao1").on('mouseover', function(){
+    $("#food").attr("src","comidapao.jpg");
+});
+$("#pao1").on('mouseout', function(){
+    $("#food").attr("src","comida.jpg");
+});
+
+$("#carne1").on('mouseover', function(){
+    $("#food").attr("src","comidacarne.jpg");
+});
+$("#carne1").on('mouseout', function(){
+    $("#food").attr("src","comida.jpg");
+});
+
+$("#fruta1").on('click', function(){
+    $("#parte4_0_1").css('display', 'block');
+});
+
+$("#pao1").on('click', function(){
+    $("#parte4_0_2").css('display', 'block');
+});
+
+$("#carne1").on('click', function(){
+    $("#parte4_0_3").css('display', 'block');
+});
