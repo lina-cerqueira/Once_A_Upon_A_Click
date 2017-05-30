@@ -47,6 +47,43 @@ $("#run").on('mouseout', function(){
     $(".botao").css("opacity", "1");
 });
 
+$("#return").on('mouseover', function(){
+    this.src = "returnhomehover.png";
+    $(".botao").css("opacity", "1");
+});
+$("#return").on('mouseout', function(){
+    this.src = "returnhome.png";
+    $(".botao").css("opacity", "1");
+});
+
+$("#forest").on('mouseover', function(){
+    this.src = "runtotheforesthover.png";
+    $(".botao").css("opacity", "1");
+});
+$("#forest").on('mouseout', function(){
+    this.src = "runtotheforest.png";
+    $(".botao").css("opacity", "1");
+});
+
+$("#oldlady").on('mouseover', function(){
+    this.src = "gowiththeoldladyhover.png";
+    $(".botao").css("opacity", "1");
+});
+$("#oldlady").on('mouseout', function(){
+    this.src = "gowiththeoldlady.png";
+    $(".botao").css("opacity", "1");
+});
+
+$("#stayinforest").on('mouseover', function(){
+    this.src = "stayintheforesthover.png";
+    $(".botao").css("opacity", "1");
+});
+$("#stayinforest").on('mouseout', function(){
+    this.src = "stayintheforest.png";
+    $(".botao").css("opacity", "1");
+});
+
+
 var contador = 0;
 $("#fogo").on('click', function(){
     contador++;
