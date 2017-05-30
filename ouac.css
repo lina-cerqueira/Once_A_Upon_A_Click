@@ -132,24 +132,24 @@
     /*tudo composto em termos de css até aqui!! OBRIGADO JOANA! <3 */
 
     .image {
-        padding-top: 75px;
-        padding-bottom: 150px;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-bottom: 200px;
+    border-left:30px; 
+    float: left;
+    visibility: hidden;
+  
 
+}
+.fadeIn {
+        -webkit-animation: animat_show 3.0s;
+        animation: animat_show 3.0s;
+        visibility: visible !important;
     }
 
-    .image1 {
-        padding-top: 300px;
-        padding-bottom: 150px;
-
-    }
-
-    .image2 {
-         padding-top: 10px;
-        padding-left: 10px;
-        padding-bottom: 200px;
-        border-left:30px; 
-        float: left;
-
+    @-webkit-keyframes animat_show{
+        0%{opacity:0}
+        100%{opacity:1}
     }
 
     #andri {
@@ -191,25 +191,49 @@
         text-align: center;
     }
 
-    #ultima {
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
+    .text {
+    
+    width: 50%;
+    margin-left:23%;
+    margin-bottom: 20%;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Inknut Antiqua', normal;
+ 
+}
 
-    .introducao {
-        position: ;
-        left:20%;
-        top: 100%;
-        width: 60%;
-        color: white;
-        text-align: center;
-        font-size: 1.9vw;
-        font-family: 'Inknut Antiqua', normal;
-    }
+.text1 {
+    
+    width: 50%;
+    margin-top:10%;
+    margin-left:23%;
+    margin-bottom: 20%;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Inknut Antiqua', normal;
+ 
+}
+
+.escondido {
+    
+    width: 50%;
+    margin-left:23%;
+    margin-bottom: 20%;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Inknut Antiqua', normal;
+ 
+}
 
     .botao {
+        
+    width: 50%;
+    margin-left:30%;
         position: relative;
-        bottom: 150px;
+     
     }
 
     #paragrafo1 {

@@ -1,3 +1,25 @@
+ function showImagesandText(el) {
+        var windowHeight = jQuery( window ).height();
+        $(el).each(function(){
+            var thisPos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (topOfWindow + windowHeight - 250 > thisPos ) {
+                $(this).addClass("fadeIn");
+            }
+        });
+    }
+    $(document).ready(function(){
+            showImagesandText('.image');
+        showImagesandText('.text');
+            
+    });
+    $(window).scroll(function() {
+            showImagesandText('.image');
+        showImagesandText('.text');
+      
+    });
+
 $("#start").on('mouseover', function(){
     this.src = "click.jpg";
     $("#comeco").css("opacity", "0.6");
