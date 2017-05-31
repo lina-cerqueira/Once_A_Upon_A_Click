@@ -10,6 +10,95 @@
         width: 100%;
     }
 
+#parte2, #parte2_1, #parte3, #parte4, #parte4_1, #parte5, #parte6, #parte6_1, #parte7, #parte4_0_1, #parte4_0_2, #parte4_0_3, #bagavenenosa, #parte8_1, #lost, #parte8, #susto, #susto2, #susto3, #parte9, #parte9_1, #afterfogo, #afterfogo2 {
+    display: none;
+}
+
+#dedo, #roubo {
+    position: relative;
+}
+
+#space {
+    position: relative;
+}
+
+.spacebar {
+    position: absolute;
+    top: 50%;
+}
+
+#osso {
+    position: absolute;
+    width: 130px;
+    height: 200px;
+    left: 38%;
+    top:45%;
+}
+
+#dedo1 {
+    position: absolute;
+    width: 90px;
+    height: 120px;
+    left: 44.5%;
+    top:41%;
+}
+, #susto, #susto2, #susto3
+#dedo2 {
+    position: absolute;
+    width: 60px;
+    height: 150px;
+    left: 47%;
+    top: 24%;
+}
+
+#dedo3 {
+    position: absolute;
+    width: 70px;
+    height: 170px;
+    left: 50.5%;
+    top: 19%;
+}
+
+#dedo4 {
+    position: absolute;
+    width: 50px;
+    height: 160px;
+    left: 54.5%;
+    top: 20%;
+}
+
+#dedo5 {
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    left: 57%;
+    top: 29%;
+}
+
+#fruta1 {
+    position: absolute;
+    width: 170px;
+    height: 120px;
+    left: 35%;
+    top: 26%;
+}
+
+#pao1 {
+    position: absolute;
+    width: 170px;
+    height: 120px;
+    left: 45%;
+    top: 26%;
+}
+
+#carne1 {
+    position: absolute;
+    width: 170px;
+    height: 120px;
+    left: 55%;
+    top: 26%;
+}
+
     canvas {
         background-image: url(fundo.jpg);
         background-size: 100% 100%;
@@ -135,9 +224,22 @@
     padding-top: 5%;
     padding-bottom: 200px;
     visibility: hidden;
-  
-
 }
+
+.imagepick1 {
+    position: absolute;
+    left: 40%;
+    top: 32750px;
+    z-index: 100;
+}
+
+.imagepick2 {
+    position: absolute;
+    left: 55%;
+    top: 32750px;
+    z-index: 100;
+}
+
 .fadeIn {
         -webkit-animation: animat_show 3.0s;
         animation: animat_show 3.0s;
@@ -251,10 +353,6 @@
         text-align:;
         font-size: 1vw;
         font-family: 'Inknut Antiqua', normal;
-        display: none;
-    }
-
-    #uimage, #uimage3, #uimage4 {
         display: none;
     }
 

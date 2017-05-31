@@ -31,6 +31,7 @@ function StopSound(soundobj){
     thissound.currentTime = 0;
 }
 
+
 $("#start").on('mouseover', function(){
     this.src = "click.jpg";
     $("#comeco").css("opacity", "0.6");
@@ -142,6 +143,23 @@ if (contador===2){
 if (contador===3){
         this.src = "fogo4.jpg";
         $("#afterfogo").css('display', 'block');
+    //extra, trocar quando tiver jogo implementado
+    $("#parte3").css('display', 'block');
+}
+});
+
+var contador3 = 0;
+$("#fogo2").on('click', function(){
+    contador3++;
+if (contador3===1){
+        this.src = "fogo2.jpg";
+}
+if (contador3===2){
+        this.src = "fogo3.jpg";
+}
+if (contador3===3){
+        this.src = "fogo4.jpg";
+        $("#afterfogo2").css('display', 'block');
     //extra, trocar quando tiver jogo implementado
     $("#parte3").css('display', 'block');
 }
@@ -271,4 +289,56 @@ $("#pao1").on('click', function(){
 
 $("#carne1").on('click', function(){
     $("#parte4_0_3").css('display', 'block');
+});
+
+var comeca = 0;
+var espaco = 0;
+document.body.onkeydown = function(e){
+            if(e.keyCode == 32){
+                comeca++;
+                espaco++;
+                if(comeca==1){
+                    tempo();
+                }
+            $(".spacebar").attr("src","spacebarpressed.png");
+            }
+        };
+document.body.onkeyup = function(e){
+            if(e.keyCode == 32){
+            $(".spacebar").attr("src","spacebar.png");
+            }
+        };
+
+function tempo(){
+    setTimeout(function(){
+        if(espaco>=10){
+            console.log("conseguiste");
+            $("#parte8").css('display', 'block');
+        } else {
+            console.log("perdeste");
+            $("lost").css('display', 'block');
+        }
+    }, 5000);
+};
+
+$("#parents").on('mouseover', function(){
+    $("#parents").attr("src","returntoparentshover.png");
+});
+$("#parents").on('mouseout', function(){
+    $("#parents").attr("src","returntoparents.png");
+});
+
+$("#house").on('mouseover', function(){
+    $("#house").attr("src","stayinthehousehover.png");
+});
+$("#house").on('mouseout', function(){
+    $("#house").attr("src","stayinthehouse.png");
+});
+
+$("#parents").on('click', function(){
+    $("#parte9").css('display', 'block');
+});
+
+$("#house").on('click', function(){
+    $("#parte9_1").css('display', 'block');
 });
