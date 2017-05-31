@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <html lang="pt">
+    <audio src="Haunted.mp3" autostart="true" loop="true">  
+    <script>
+
+function setCookie(c_name,value,exdays)
+{
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+
+function getCookie(c_name)
+{
+    var i,x,y,ARRcookies=document.cookie.split(";");
+    for (i=0;i<ARRcookies.length;i++)
+    {
+      x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+      y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+      x=x.replace(/^\s+|\s+$/g,"");
+      if (x==c_name)
+        {
+        return unescape(y);
+        }
+      }
+}
+
+var song = document.getElementsByTagName('audio')[0];
+var played = false;
+var tillPlayed = getCookie('timePlayed');
+function update()
+{
+    if(!played){
+        if(tillPlayed){
+        song.currentTime = tillPlayed;
+        song.play();
+        played = true;
+        }
+        else {
+                song.play();
+                played = true;
+        }
+    }
+
+    else {
+    setCookie('timePlayed', song.currentTime);
+    }
+}
+setInterval(update,1000);
+</script>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua:300,400,500,600,700,800,900" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="ouac.css">
+        <link rel="stylesheet" href="animate.css">
+    </head>
+    <body>
+        <nav>
+        </nav>
+        <main>
+            <div>
+                
+                <div>
+                <audio id="somnoite" src="night.mp3" />
+                <audio id="somcriancas" src="kids.mp3"/>
+                <audio id="sombonfire" src="bonfire.mp3"/>
+                </div>
+                
+               <center>
+                      <div class= "text1 animated fadeIn">
+                      <p>Gretel ran to wake her brother, she cried bitter tears and said to Hansel, “It is over with us!”</p>
+                      </div>
+                     
+           
+            <img class="image" src="4.jpg"> 
+                       
+                      <div class = "text">
+                      <p> 
+“Be quiet, Gretel,” said Hansel, “and don’t worry. I know what to do.”<br>
+                          And as soon as the adults had fallen asleep, he got up, pulled on his jacket, opened the lower door, and crept
+outside.<br> The moon was shining brightly, and the white pebbles in front of the house were glistening like silver
+coins.</p>
+                      </div>
+            <img class="image somnoite" src="5.jpg"
+                        onmouseover="PlaySound('somnoite')"
+                        onmouseout="StopSound('somnoite')"
+                 >
+                      <div class = "text">
+                      <p>Hansel bent over and filled his jacket pockets with them, as many as would fit.</p>
+                      </div>
+            <img class="image" src="6.jpg">
+                       <div class = "text">
+                      <p>Then he went back into the house and said, “Don’t worry, Gretel. Sleep well. God will not forsake us.” Then he went back to bed.</p>
+                      </div>
+            <img class="image" src="7.jpg">
+                      <div class = "text">
+                           <p>At daybreak, even before sunrise, the woman came and woke the two children. “Get up, you lazybones. We
+are going into the woods to fetch wood.” Then she gave each one a little piece of bread, saying, “Here is something
+                      for midday. Don’t eat it any sooner, for you’ll not get any more.”</p>
+            </div>
+                      
+            <img class="image" src="8.jpg">
+            <div class ="text" >
+                <p> Gretel put the bread under her apron, because Hansel’s pockets were full of stones. Then all together they set
+forth into the woods. After they had walked a little way, Hansel began stopping again and again and looking
+back toward the house.</p>
+            </div>
+            <img class="image" src="9.jpg">
+            <div class ="text" >
+                <p> The father said, “Hansel, why are you stopping and looking back? Pay attention now, and don’t forget your
+legs.”
+“Oh, father, i” said Hansel, “I am looking at my white cat that is sitting on the roof and wants to say good-bye
+to me.”
+The woman said, “You fool, that isn’t your cat. That’s the morning sun shining on the chimney.”<br>However, Hansel had not been looking at his cat but instead had been dropping the shiny pebbles from his
+pocket onto the path.</p>
+            </div>
+            <img class="image somcriancas" src="10.jpg"
+                        onmouseover="PlaySound('somcriancas')"
+                        onmouseout="StopSound('somcriancas')"
+                 >
+            
+             <div class ="text" >
+                <p> When they arrived in the middle of the woods, the father said, “You children gather some wood, and I will
+make a fire so you won’t freeze.”</p>
+            </div>
+            
+            <img class="image somcriancas" src="11.jpg"
+                 onmouseover="PlaySound('somcriancas')"
+                 onmouseout="StopSound('somcriancas')"
+                 >
+            
+             <div class ="text" >
+                <p> Hansel and Gretel gathered together some twigs, a pile as high as a small mountain</p>
+            </div>
+            
+            <img class="image somcriancas" src="12.jpg"
+                 onmouseover="PlaySound('somcriancas')"
+                 onmouseout="StopSound('somcriancas')"
+                 >
+            
+            <div class ="text" >
+                <p>The twigs were set afire, and when the flames were burning well, the woman said, “Lie down by the fire and
+rest. </p>
+            </div>
+            <img id="fogo" class="image sombonfire" src="fogo1.jpg"
+                 onmouseover="PlaySound('sombonfire')"
+                 onmouseout="StopSound('sombonfire')"
+                 >
+            
+             <div class ="text" >
+                <p>We will go into the woods to cut wood. When we are finished, we will come back and get you.”
+</p>
+            </div>
+            
+            <img id="uimage" class="image" src="14.jpg" >
+            
+             <div class ="text" >
+                <p> Hansel and Gretel sat by the fire. When midday came each one ate his little piece of bread. Because they could
+hear the blows of an ax, they thought that the father was nearby. However, it was not an ax. It was a branch
+that he had tied to a dead tree and that the wind was beating back and forth. After they had sat there a long
+time, their eyes grew weary and closed, and they fell sound sleep.
+When they finally awoke, it was dark at night. Gretel began to cry and said, “How will we get out of woods?”
+Hansel comforted her, “Wait a little until the moon comes up, and then we’ll find the way.”</p>
+            </div>
+            
+            <img class="image" class="image somnoite" src="15.png" style="width:60%; height:60%;"
+                 onmouseover="PlaySound('somnoite')"
+                 onmouseout="StopSound('somnoite')"
+                 >
+                   
+                   <div class ="text" >
+                <p> After the full moon had come up, Hansel took his little sister by the hand. They followed the pebbles that
+glistened there like newly minted coins, showing them the way. They walked throughout the entire night, and
+as morning was breaking, they arrived at the father’s house.
+</p>
+            </div>
+            
+            <img class="image" class="image somnoite" src="16.png" style="width:60%; height:60%;"
+                 onmouseover="PlaySound('somnoite')"
+                 onmouseout="StopSound('somnoite')"
+                 >
+                
+                <!--voltar para casa*/-->
+                    <div class="botao"> 
+                    <a href="historia3.html"><img id="return"  src="returnhome.png" width="220" height="200"></a>
+                    <a href="historia3.1.html"><img id="forest" src="runtotheforest.png" width="220" height="200"></a> 
+                    
+            </div>
+                   </center>
+                </div>
+            
+             <a href="index.html">voltar</a>
+            <a href="historia1.html">voltar</a>
+          
+        </main>
+      <footer>
+         
+           <script src="jquery.waypoints.min.js"></script> 
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+            <script src="click.js"></script>
+    </footer>
+    </body>
+</html>
